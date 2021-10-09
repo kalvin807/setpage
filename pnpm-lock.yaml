@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': ^7.15.8
   '@fontsource/inter': ^4.5.0
+  '@headlessui/react': ^1.4.1
   '@next/bundle-analyzer': ^11.1.2
   '@prefresh/babel-plugin': ^0.4.1
   '@prefresh/next': ^1.4.7
@@ -10,11 +11,9 @@ specifiers:
   '@tailwindcss/typography': ^0.4.1
   '@types/react': ^17.0.27
   autoprefixer: ^10.3.7
-  boring-avatars: ^1.5.8
-  daisyui: ^1.14.2
   eslint: ^7.32.0
-  eslint-config-next: ^11.1.3-canary.41
-  next: ^11.1.3-canary.41
+  eslint-config-next: ^11.1.2
+  next: ^11.1.2
   next-plugin-preact: ^3.0.6
   next-themes: ^0.0.15
   postcss: ^8.3.9
@@ -23,7 +22,6 @@ specifiers:
   prettier: ^2.4.1
   react: npm:@preact/compat@^17.0.2
   react-dom: npm:@preact/compat@^17.0.2
-  react-feather: ^2.0.9
   react-ssr-prepass: npm:preact-ssr-prepass@^1.2.0
   sharp: ^0.29.1
   tailwindcss: ^2.2.16
@@ -32,16 +30,15 @@ specifiers:
 
 dependencies:
   '@fontsource/inter': 4.5.0
+  '@headlessui/react': 1.4.1_82cb9fd171153d2c613334009d54eb8b
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.16
-  boring-avatars: 1.5.8
-  next: 11.1.3-canary.54_4974d4d67c73602d4e662902047a9864
-  next-plugin-preact: 3.0.6_0ede883a2b703fea424838f4c87f82da
-  next-themes: 0.0.15_a7d3cd143dc23f72fbd5a404279932d7
+  next: 11.1.2_134083139cf31573554e520aea2ab73c
+  next-plugin-preact: 3.0.6_3546dbcd887ff3083d8e9e3e4c69d378
+  next-themes: 0.0.15_cdc50cf345868d71950319198f5856a1
   preact: 10.5.14
   preact-render-to-string: 5.1.19_preact@10.5.14
   react: /@preact/compat/17.0.2_preact@10.5.14
   react-dom: /@preact/compat/17.0.2_preact@10.5.14
-  react-feather: 2.0.9_@preact+compat@17.0.2
   react-ssr-prepass: /preact-ssr-prepass/1.2.0_preact@10.5.14
   sharp: 0.29.1
 
@@ -49,13 +46,12 @@ devDependencies:
   '@babel/core': 7.15.8
   '@next/bundle-analyzer': 11.1.2
   '@prefresh/babel-plugin': 0.4.1
-  '@prefresh/next': 1.4.7_ead1ea0c848804436b6550a2d8384946
+  '@prefresh/next': 1.4.7_68ab54a4fda9ec73b10e883e68b4d149
   '@prefresh/webpack': 3.3.2_a784d0874b19dcee48c82e7d83cf3da5
   '@types/react': 17.0.27
   autoprefixer: 10.3.7_postcss@8.3.9
-  daisyui: 1.14.2
   eslint: 7.32.0
-  eslint-config-next: 11.1.3-canary.54_1d89afae34f73ede3f847055699acbb5
+  eslint-config-next: 11.1.2_82ad98da5e129ae9d310451a179848d9
   postcss: 8.3.9
   prettier: 2.4.1
   tailwindcss: 2.2.16_96f83969316717847b3edf58a3f353f3
@@ -276,11 +272,19 @@ packages:
       regenerator-runtime: 0.13.9
     dev: true
 
+  /@babel/runtime/7.15.3:
+    resolution: {integrity: sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.9
+    dev: false
+
   /@babel/runtime/7.15.4:
     resolution: {integrity: sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
+    dev: true
 
   /@babel/template/7.15.4:
     resolution: {integrity: sha512-UgBAfEa1oGuYgDIPM2G+aHa4Nlo9Lh6mGD2bDBGMTbYnc38vulXPuC1MGjYILIEmlwl6Rd+BPR9ee3gm20CBtg==}
@@ -362,6 +366,17 @@ packages:
     resolution: {integrity: sha512-sqKVVVOe5ivCaXDWivIJYVSaEgdQK9ul7a4Kity5Iw7u9+wBAPbX1RMSnLLmp7O4Vzj0WOWwMAJsTL00xwaNug==}
     dev: false
 
+  /@headlessui/react/1.4.1_82cb9fd171153d2c613334009d54eb8b:
+    resolution: {integrity: sha512-gL6Ns5xQM57cZBzX6IVv6L7nsam8rDEpRhs5fg28SN64ikfmuuMgunc+Rw5C1cMScnvFM+cz32ueVrlSFEVlSg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: /@preact/compat/17.0.2_preact@10.5.14
+      react-dom: /@preact/compat/17.0.2_preact@10.5.14
+    dev: false
+
   /@humanwhocodes/config-array/0.5.0:
     resolution: {integrity: sha512-FagtKFz74XrTl7y6HCzQpwDfXP0yhxe9lHLD1UZxjvZIcbyRz8zTFF/yYNfSfzU414eDwZ1SrO0Qvtyf+wFMQg==}
     engines: {node: '>=10.10.0'}
@@ -390,22 +405,22 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@next/env/11.1.3-canary.54:
-    resolution: {integrity: sha512-p90+S8dr61L+Oadb+mpga+MmTBUhLBTETVwjz1N4/NmpDyBTvi9luwvSP26De2I23fMvS+9LwYZPOJx308xNhg==}
+  /@next/env/11.1.2:
+    resolution: {integrity: sha512-+fteyVdQ7C/OoulfcF6vd1Yk0FEli4453gr8kSFbU8sKseNSizYq6df5MKz/AjwLptsxrUeIkgBdAzbziyJ3mA==}
     dev: false
 
-  /@next/eslint-plugin-next/11.1.3-canary.54:
-    resolution: {integrity: sha512-q3lDVirEzN76p7QeRguRnM4/ANmQMSc9Je0P98DoxI2FcDf12UiTNju+46q92BKwwAx+osI3sYiU0hkQftRBRQ==}
+  /@next/eslint-plugin-next/11.1.2:
+    resolution: {integrity: sha512-cN+ojHRsufr9Yz0rtvjv8WI5En0RPZRJnt0y16Ha7DD+0n473evz8i1ETEJHmOLeR7iPJR0zxRrxeTN/bJMOjg==}
     dependencies:
       glob: 7.1.7
     dev: true
 
-  /@next/polyfill-module/11.1.3-canary.54:
-    resolution: {integrity: sha512-2U2cZeMQukDauKU4K2ZQkNd8w2MPU+J0VM4vWsgSSCVlQ+DW0FiguquLcobxAaMCumaLtM/dQp5aDjm+2TuYHA==}
+  /@next/polyfill-module/11.1.2:
+    resolution: {integrity: sha512-xZmixqADM3xxtqBV0TpAwSFzWJP0MOQzRfzItHXf1LdQHWb0yofHHC+7eOrPFic8+ZGz5y7BdPkkgR1S25OymA==}
     dev: false
 
-  /@next/react-dev-overlay/11.1.3-canary.54_82cb9fd171153d2c613334009d54eb8b:
-    resolution: {integrity: sha512-J6ajNrd79QlhWxvxQP1oIFpSq6oO4QncCuDyiBjpHqvNTnx/9hkm3/7GsDEy6QyIBSx6D13tC/uxpB27c/KPvQ==}
+  /@next/react-dev-overlay/11.1.2_82cb9fd171153d2c613334009d54eb8b:
+    resolution: {integrity: sha512-rDF/mGY2NC69mMg2vDqzVpCOlWqnwPUXB2zkARhvknUHyS6QJphPYv9ozoPJuoT/QBs49JJd9KWaAzVBvq920A==}
     peerDependencies:
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -425,8 +440,8 @@ packages:
       strip-ansi: 6.0.0
     dev: false
 
-  /@next/react-refresh-utils/11.1.3-canary.54_5d2d413f4c666a3f1f0094c687ee0708:
-    resolution: {integrity: sha512-jXBfzp854HU3+N44laYNxnvFGJvhA0TXz24VLS6d30r+0pDHtMi9X+zSfNfPmHpXabDjBKpnPDouMv+Sg6MGJQ==}
+  /@next/react-refresh-utils/11.1.2_5d2d413f4c666a3f1f0094c687ee0708:
+    resolution: {integrity: sha512-hsoJmPfhVqjZ8w4IFzoo8SyECVnN+8WMnImTbTKrRUHOVJcYMmKLL7xf7T0ft00tWwAl/3f3Q3poWIN2Ueql/Q==}
     peerDependencies:
       react-refresh: 0.8.3
       webpack: ^4 || ^5
@@ -438,8 +453,8 @@ packages:
       webpack: 5.58.1
     dev: false
 
-  /@next/swc-darwin-arm64/11.1.3-canary.54:
-    resolution: {integrity: sha512-SAPPI7N1K/XX54abiGolI5BZjJ7bRndZGSDVN0SBlcz1MzBGSFQ6AN959ATI6WKoC/IVnSta9x9OPXTjLrZj5g==}
+  /@next/swc-darwin-arm64/11.1.2:
+    resolution: {integrity: sha512-hZuwOlGOwBZADA8EyDYyjx3+4JGIGjSHDHWrmpI7g5rFmQNltjlbaefAbiU5Kk7j3BUSDwt30quJRFv3nyJQ0w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -447,8 +462,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-darwin-x64/11.1.3-canary.54:
-    resolution: {integrity: sha512-ZuGu0AfS+iExYfhg8MiNSvDCGqMkGNNSQHn+CT75Q2iRtq7/40CEIS5/SLDHKrSPv1Tsq6JxRgSueTrv22zdUA==}
+  /@next/swc-darwin-x64/11.1.2:
+    resolution: {integrity: sha512-PGOp0E1GisU+EJJlsmJVGE+aPYD0Uh7zqgsrpD3F/Y3766Ptfbe1lEPPWnRDl+OzSSrSrX1lkyM/Jlmh5OwNvA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -456,8 +471,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-x64-gnu/11.1.3-canary.54:
-    resolution: {integrity: sha512-prZ7sHyQA4MyNDuQBjZrhpnlifnQwN8k5TGOLdp8M2sNDW/VlEwLkxs5NwhpzywVlS19+Dc0Kz0dcQfvHPezJw==}
+  /@next/swc-linux-x64-gnu/11.1.2:
+    resolution: {integrity: sha512-YcDHTJjn/8RqvyJVB6pvEKXihDcdrOwga3GfMv/QtVeLphTouY4BIcEUfrG5+26Nf37MP1ywN3RRl1TxpurAsQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -465,8 +480,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-win32-x64-msvc/11.1.3-canary.54:
-    resolution: {integrity: sha512-zmf3SMYXyEzH55mgjgoi2R9FD0ogd2hGN2YOMktVxvS+v6fQT/Gar8BrQJTDd7k07RTxQ72ncPTHhb1PO/aNdw==}
+  /@next/swc-win32-x64-msvc/11.1.2:
+    resolution: {integrity: sha512-e/pIKVdB+tGQYa1cW3sAeHm8gzEri/HYLZHT4WZojrUxgWXqx8pk7S7Xs47uBcFTqBDRvK3EcQpPLf3XdVsDdg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -523,7 +538,7 @@ packages:
     dependencies:
       preact: 10.5.14
 
-  /@prefresh/next/1.4.7_ead1ea0c848804436b6550a2d8384946:
+  /@prefresh/next/1.4.7_68ab54a4fda9ec73b10e883e68b4d149:
     resolution: {integrity: sha512-Dz0ssNDk6suG4Sag31uG6sMCFckipf6WZjQ+Wd4uTaNlcmzGQZpIOfbqyYrK6hP3kuG2lSQ0DgtGFj32Ze4dHw==}
     peerDependencies:
       next: ^9.4.0 || ^10.0.0 || ^11.0.0
@@ -534,7 +549,7 @@ packages:
       '@prefresh/core': 1.3.2_preact@10.5.14
       '@prefresh/utils': 1.1.1
       '@prefresh/webpack': 3.3.2_a784d0874b19dcee48c82e7d83cf3da5
-      next: 11.1.3-canary.54_4974d4d67c73602d4e662902047a9864
+      next: 11.1.2_134083139cf31573554e520aea2ab73c
       preact: 10.5.14
       webpack: 5.58.1
 
@@ -997,6 +1012,11 @@ packages:
     resolution: {integrity: sha1-9wtzXGvKGlycItmCw+Oef+ujva0=}
     dev: true
 
+  /ast-types/0.13.2:
+    resolution: {integrity: sha512-uWMHxJxtfj/1oZClOxDEV1sQ1HCDkA4MG8Gr69KKeBjEVH0R84WlejZ0y2DcwyBlpAEMltmVYkVgqfLFb2oyiA==}
+    engines: {node: '>=4'}
+    dev: false
+
   /astral-regex/2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
@@ -1062,10 +1082,6 @@ packages:
 
   /bn.js/5.2.0:
     resolution: {integrity: sha512-D7iWRBvnZE8ecXiLj/9wbxH7Tk79fAh8IHaTNq1RWRixsS02W+5qS+iE9yq6RYl0asXx5tw0bLhmT5pIfbSquw==}
-    dev: false
-
-  /boring-avatars/1.5.8:
-    resolution: {integrity: sha512-Xy9+6UcdwLZ0JDrzY2r0hYZXnQS9ZJRHcW8TdfnBfFcjTq7UfCC7N8g7tu7GD90RCp6XHbzTuJ1QKoK4djcWPA==}
     dev: false
 
   /brace-expansion/1.1.11:
@@ -1483,10 +1499,6 @@ packages:
     resolution: {integrity: sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==}
     dev: true
 
-  /daisyui/1.14.2:
-    resolution: {integrity: sha512-ER4k58JMUYF4EUDg3GgpaWPdvq6FYnMfetV2JXOEWAPNQVWs4jHtdhehFUdg7M1Lae9GGobb0roW3LuEmD/PuA==}
-    dev: true
-
   /damerau-levenshtein/1.0.7:
     resolution: {integrity: sha512-VvdQIPGdWP0SqFXghj79Wf/5LArmreyMsGLa6FG6iC4t3j7j5s71TrwWmT/4akbDQIqjfACkLZmjXhA7g2oUZw==}
     dev: true
@@ -1741,8 +1753,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-next/11.1.3-canary.54_1d89afae34f73ede3f847055699acbb5:
-    resolution: {integrity: sha512-ALqvLg9uyezJKbCPxRPxtUuozmPhWAiVi89Xs9qYwjtMPNglT0JWP6nl4hnuoev1EnCo4j6RumO4WGw70A54XQ==}
+  /eslint-config-next/11.1.2_82ad98da5e129ae9d310451a179848d9:
+    resolution: {integrity: sha512-dFutecxX2Z5/QVlLwdtKt+gIfmNMP8Qx6/qZh3LM/DFVdGJEAnUKrr4VwGmACB2kx/PQ5bx3R+QxnEg4fDPiTg==}
     peerDependencies:
       eslint: ^7.23.0
       next: '>=10.2.0'
@@ -1751,7 +1763,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 11.1.3-canary.54
+      '@next/eslint-plugin-next': 11.1.2
       '@rushstack/eslint-patch': 1.0.6
       '@typescript-eslint/parser': 4.31.1_eslint@7.32.0+typescript@4.4.3
       eslint: 7.32.0
@@ -1761,7 +1773,7 @@ packages:
       eslint-plugin-jsx-a11y: 6.4.1_eslint@7.32.0
       eslint-plugin-react: 7.25.2_eslint@7.32.0
       eslint-plugin-react-hooks: 4.2.0_eslint@7.32.0
-      next: 11.1.3-canary.54_4974d4d67c73602d4e662902047a9864
+      next: 11.1.2_134083139cf31573554e520aea2ab73c
       typescript: 4.4.3
     transitivePeerDependencies:
       - supports-color
@@ -2763,6 +2775,7 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+    dev: true
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -2896,7 +2909,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /next-plugin-preact/3.0.6_0ede883a2b703fea424838f4c87f82da:
+  /next-plugin-preact/3.0.6_3546dbcd887ff3083d8e9e3e4c69d378:
     resolution: {integrity: sha512-Ze8c8h0jaCPbG0X9T5jJpSDtrfvU9NLlt+DJWtxOu2fn6qPbNU3s61F1hTcldZb3IbpXkp5iGnhPCdgGZEGrCQ==}
     requiresBuild: true
     peerDependencies:
@@ -2904,7 +2917,7 @@ packages:
       preact-render-to-string: '>=5'
       preact-ssr-prepass: '>=1'
     dependencies:
-      '@prefresh/next': 1.4.7_ead1ea0c848804436b6550a2d8384946
+      '@prefresh/next': 1.4.7_68ab54a4fda9ec73b10e883e68b4d149
       '@prefresh/webpack': 3.3.2_a784d0874b19dcee48c82e7d83cf3da5
       module-alias: 2.2.2
       preact: 10.5.14
@@ -2915,25 +2928,25 @@ packages:
       - webpack
     dev: false
 
-  /next-themes/0.0.15_a7d3cd143dc23f72fbd5a404279932d7:
+  /next-themes/0.0.15_cdc50cf345868d71950319198f5856a1:
     resolution: {integrity: sha512-LTmtqYi03c4gMTJmWwVK9XkHL7h0/+XrtR970Ujvtu3s0kZNeJN24aJsi4rkZOI8i19+qq6f8j+8Duwy5jqcrQ==}
     peerDependencies:
       next: '*'
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 11.1.3-canary.54_4974d4d67c73602d4e662902047a9864
+      next: 11.1.2_134083139cf31573554e520aea2ab73c
       react: /@preact/compat/17.0.2_preact@10.5.14
       react-dom: /@preact/compat/17.0.2_preact@10.5.14
     dev: false
 
-  /next/11.1.3-canary.54_4974d4d67c73602d4e662902047a9864:
-    resolution: {integrity: sha512-96pZTH7+i2LBdJnNNVlR+pETyvMjNu/WnhVC5Dgpszxv0qzqkIaQKhPJTWNQakjdoMHzeMXdCkY6Uq9ZECHqkg==}
+  /next/11.1.2_134083139cf31573554e520aea2ab73c:
+    resolution: {integrity: sha512-azEYL0L+wFjv8lstLru3bgvrzPvK0P7/bz6B/4EJ9sYkXeW8r5Bjh78D/Ol7VOg0EIPz0CXoe72hzAlSAXo9hw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     peerDependencies:
       fibers: '>= 3.1.0'
-      node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0
+      node-sass: ^4.0.0 || ^5.0.0
       react: ^17.0.2
       react-dom: ^17.0.2
       sass: ^1.3.0
@@ -2945,14 +2958,15 @@ packages:
       sass:
         optional: true
     dependencies:
-      '@babel/runtime': 7.15.4
+      '@babel/runtime': 7.15.3
       '@hapi/accept': 5.0.2
-      '@next/env': 11.1.3-canary.54
-      '@next/polyfill-module': 11.1.3-canary.54
-      '@next/react-dev-overlay': 11.1.3-canary.54_82cb9fd171153d2c613334009d54eb8b
-      '@next/react-refresh-utils': 11.1.3-canary.54_5d2d413f4c666a3f1f0094c687ee0708
+      '@next/env': 11.1.2
+      '@next/polyfill-module': 11.1.2
+      '@next/react-dev-overlay': 11.1.2_82cb9fd171153d2c613334009d54eb8b
+      '@next/react-refresh-utils': 11.1.2_5d2d413f4c666a3f1f0094c687ee0708
       '@node-rs/helper': 1.2.1
       assert: 2.0.0
+      ast-types: 0.13.2
       browserify-zlib: 0.2.0
       browserslist: 4.16.6
       buffer: 5.6.0
@@ -2977,6 +2991,7 @@ packages:
       os-browserify: 0.3.0
       p-limit: 3.1.0
       path-browserify: 1.0.1
+      pnp-webpack-plugin: 1.6.4_typescript@4.4.3
       postcss: 8.2.15
       process: 0.11.10
       querystring-es3: 0.2.1
@@ -2988,7 +3003,7 @@ packages:
       stream-browserify: 3.0.0
       stream-http: 3.1.1
       string_decoder: 1.3.0
-      styled-jsx: 5.0.0-beta.2_d13feea448f0496d16a8cef20327e3e4
+      styled-jsx: 4.0.1_d13feea448f0496d16a8cef20327e3e4
       timers-browserify: 2.0.12
       tty-browserify: 0.0.1
       use-subscription: 1.5.1_@preact+compat@17.0.2
@@ -2996,12 +3011,13 @@ packages:
       vm-browserify: 1.1.2
       watchpack: 2.1.1
     optionalDependencies:
-      '@next/swc-darwin-arm64': 11.1.3-canary.54
-      '@next/swc-darwin-x64': 11.1.3-canary.54
-      '@next/swc-linux-x64-gnu': 11.1.3-canary.54
-      '@next/swc-win32-x64-msvc': 11.1.3-canary.54
+      '@next/swc-darwin-arm64': 11.1.2
+      '@next/swc-darwin-x64': 11.1.2
+      '@next/swc-linux-x64-gnu': 11.1.2
+      '@next/swc-win32-x64-msvc': 11.1.2
     transitivePeerDependencies:
       - '@babel/core'
+      - typescript
       - webpack
     dev: false
 
@@ -3358,6 +3374,15 @@ packages:
     resolution: {integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==}
     dev: false
 
+  /pnp-webpack-plugin/1.6.4_typescript@4.4.3:
+    resolution: {integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==}
+    engines: {node: '>=6'}
+    dependencies:
+      ts-pnp: 1.2.0_typescript@4.4.3
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+
   /postcss-js/3.0.3:
     resolution: {integrity: sha512-gWnoWQXKFw65Hk/mi2+WTQTHdPD5UJdDXZmX073EY/B3BWnYjO4F4t0VneTCnCGQ5E5GsCdMkzPaTXwl3r5dJw==}
     engines: {node: '>=10.0'}
@@ -3505,6 +3530,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+    dev: true
 
   /public-encrypt/4.0.3:
     resolution: {integrity: sha512-zVpa8oKZSz5bTMTFClc1fQOnyyEzpl5ozpi1B5YcvBrdohMjH2rfsBtyXcuNuwjsDIXmBYlF2N5FlJYhR29t8Q==}
@@ -3610,17 +3636,9 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
-  /react-feather/2.0.9_@preact+compat@17.0.2:
-    resolution: {integrity: sha512-yMfCGRkZdXwIs23Zw/zIWCJO3m3tlaUvtHiXlW+3FH7cIT6fiK1iJ7RJWugXq7Fso8ZaQyUm92/GOOHXvkiVUw==}
-    peerDependencies:
-      react: ^16.8.6 || ^17
-    dependencies:
-      prop-types: 15.7.2
-      react: /@preact/compat/17.0.2_preact@10.5.14
-    dev: false
-
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: true
 
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -4106,8 +4124,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /styled-jsx/5.0.0-beta.2_d13feea448f0496d16a8cef20327e3e4:
-    resolution: {integrity: sha512-yDVSNs7o2TK1w2S+S1zMuAn2x7nuodg3jtcalfCIJasVtGMx3pziOEI2GR5OY2qrA6C9RaAAPQWl8DR7BvHcHg==}
+  /styled-jsx/4.0.1_d13feea448f0496d16a8cef20327e3e4:
+    resolution: {integrity: sha512-Gcb49/dRB1k8B4hdK8vhW27Rlb2zujCk1fISrizCcToIs+55B4vmUM0N9Gi4nnVfFZWe55jRdWpAqH1ldAKWvQ==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
       '@babel/core': '*'
@@ -4322,6 +4340,18 @@ packages:
     resolution: {integrity: sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=}
     dependencies:
       punycode: 2.1.1
+    dev: false
+
+  /ts-pnp/1.2.0_typescript@4.4.3:
+    resolution: {integrity: sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 4.4.3
     dev: false
 
   /tsconfig-paths/3.11.0:

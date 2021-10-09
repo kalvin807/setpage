@@ -1,9 +1,9 @@
-import "@fontsource/inter/variable.css"
 import "tailwindcss/tailwind.css"
+import "@fontsource/inter/variable-full.css"
 import { ThemeProvider } from "next-themes"
 
 const App = ({ Component, pageProps }) => (
-  <ThemeProvider attribute="data-theme" disableTransitionOnChange>
+  <ThemeProvider>
     <Component {...pageProps} />
   </ThemeProvider>
 )
